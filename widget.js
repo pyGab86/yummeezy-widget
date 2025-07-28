@@ -32,6 +32,7 @@ try {
 
         // Get widget colors
         const id = document.getElementById('yummeezy').getAttribute('data-establishment-id')
+        console.log("id:", id)
 
         fetch(`${ backendBase }/api/no-auth`, { method: 'POST', body: JSON.stringify({ data: id, action: "get-widget-colors" })})
         .then(async(res) => {
