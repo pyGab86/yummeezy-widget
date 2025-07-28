@@ -42,6 +42,7 @@ try {
             btn.style.color = colors.text
             btn.style.borderColor = colors.text
         })
+        .catch(err => { console.log(err.message)})
 
         // Set Iframe & btn text
         let lng = getUserLang()
