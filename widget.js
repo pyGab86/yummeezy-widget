@@ -23,6 +23,7 @@ try {
     })
 
     const init = () => {
+        console.log("init start")
         inited = true
         const btn = document.getElementById('yummeezy-res-btn')
         const iframeContainer = document.getElementById('yummeezy-iframe')
@@ -31,8 +32,8 @@ try {
         const text = document.getElementById('yummeezy-res-text')
 
         // Get widget colors
-        const id = document.body.getAttribute('data-estsablishment-id')
-        console.log(id)
+        const id = document.body.getAttribute('data-establishment-id')
+        console.log("id:", id)
 
         fetch(`${ backendBase }/api/no-auth`, { method: 'POST', body: JSON.stringify({ data: id, action: "get-widget-colors" })})
         .then(async(res) => {
