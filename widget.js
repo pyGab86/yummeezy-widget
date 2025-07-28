@@ -56,7 +56,7 @@ try {
             let height = '0px'
             let transform = 'rotate(0deg)'
             if (!opened) {
-                height = Math.max(350, Math.min(550, window.innerHeight - 150)) + 'px'
+                height = Math.max(350, Math.min(650, window.innerHeight - 150)) + 'px'
                 transform = 'rotate(180deg)'
                 opened = true
             } else {
