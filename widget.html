@@ -1,12 +1,22 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget/styles.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-    </head>
-    <body data-establishment-id="13">
-        <main>
+<div>
+    <div id="yummeezy" data-establishment-id="13">
+        <script>
+            // CSS LINK
+            const cssLink = document.createElement('link');
+            cssLink.rel = 'stylesheet';
+            cssLink.href = 'https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget/styles.css';
+            document.head.appendChild(cssLink);
+            // Font link
+            const fontLink = document.createElement('link');
+            fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+            document.head.appendChild(fontLink);
+            // Script
+            const script = document.createElement('script');
+            script.type = 'module';
+            script.href = 'https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget@master/widget.js';
+            document.head.appendChild(script);
+        </script>
+        <div>
             <div id="yummeezy-iframe-container">
                 <div id="yummeezy-iframe">
                     <iframe src="" frameborder="0"></iframe>
@@ -30,7 +40,6 @@
                 <p id="yummeezy-res-text" class="not-loaded"></p>
                 <svg id="yummeezy-btn-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up-icon lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
             </div>
-        </main>
-        <script type="module" src="https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget@master/widget.js"></script>
-    </body>
-</html>
+        </div>
+    </div>
+</div>
