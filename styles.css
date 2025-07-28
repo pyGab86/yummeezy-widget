@@ -4,10 +4,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-#yummeezy {
-    display: none;
-}
-
 #yummeezy-res-btn {
     position: fixed;
     bottom: 15px;
