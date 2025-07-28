@@ -24,6 +24,7 @@ try {
 
     const init = () => {
         inited = true
+        const parent = document.getElementById('yummeezy')
         const btn = document.getElementById('yummeezy-res-btn')
         const iframeContainer = document.getElementById('yummeezy-iframe')
         const iframe = iframeContainer.querySelector('iframe')
@@ -74,6 +75,9 @@ try {
                 chevron.style.transform = transform
             }
         })
+
+        // Show widget
+        parent.style.display = "static"
     }
 
     // Fallback if DOMContentLoaded is not triggered
