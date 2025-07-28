@@ -7,13 +7,13 @@
 </head>
 <body>
     <div>
-        <div id="yummeezy" data-establishment-id="13">
+        <div id="yummeezy" style="display: none;" data-establishment-id="13">
             <script>
                 const addToHead = () => {
                     // CSS LINK
                     const cssLink = document.createElement('link');
                     cssLink.rel = 'stylesheet';
-                    cssLink.href = 'https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget@master/styles.css';
+                    cssLink.href = 'https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget@3577e9e/styles.css';
                     document.head.appendChild(cssLink);
                     // Font link
                     const fontLink = document.createElement('link');
@@ -22,7 +22,7 @@
                     // Script
                     const script = document.createElement('script');
                     script.type = 'module';
-                    script.src = 'https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget@master/widget.js';
+                    script.src = 'https://cdn.jsdelivr.net/gh/pyGab86/yummeezy-widget@3577e9e/widget.js';
                     document.head.appendChild(script);
                 }
                 if (document.readyState === "loading") {
