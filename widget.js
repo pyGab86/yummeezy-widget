@@ -18,10 +18,6 @@ try {
         }
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        init()
-    })
-
     const init = () => {
         inited = true
         const parent = document.getElementById('yummeezy')
@@ -80,12 +76,14 @@ try {
         parent.style.display = "static"
     }
 
-    // Fallback if DOMContentLoaded is not triggered
-    setTimeout(() => {
-        if (!inited) {
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => {
             init()
-        }
-    }, 2000)
+        })
+    } else {
+        init()
+    }
+
 } catch (error) {
     console.log(error.message)
 }
