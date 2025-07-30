@@ -2,8 +2,8 @@ import texts from "./texts.js"
 
 try {
     let inited = false
-    let backendBase = 'http://localhost:8080'
-    let resLink = 'http://localhost:3000?establishment=$$$id&lng=$$lng'
+    let backendBase = 'https://back.yumeezy.com'
+    let resLink = 'https://table.yummeezy.com?establishment=$$$id&lng=$$lng'
     let opened = false
 
     const getUserLang = () => {
