@@ -38,7 +38,7 @@ try {
             btn.style.background = colors.bg
             btn.style.color = colors.text
             btn.style.borderColor = colors.text
-            iframe.style.borderColor = colors.text
+            iframe.style.border = `1px solid ${ colors.text }`
         })
         .catch(err => { console.log(err.message)})
 
