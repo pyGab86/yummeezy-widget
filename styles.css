@@ -16,6 +16,7 @@ body {
     cursor: pointer;
     border-width: 1px;
     border-style: solid;
+    font-family: "Montserrat", sans-serif
 }
 
 #yummeezy-res-icon {
@@ -42,6 +43,7 @@ body {
 #yummeezy-iframe {
     display: flex;
     height: 0px;
+    width: min(95vw, 350px);
     flex-direction: column;
     overflow: hidden;
 }
