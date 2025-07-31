@@ -2,7 +2,7 @@ import texts from "./texts.js"
 
 try {
     let inited = false
-    let backendBase = 'https://back.yumeezy.com'
+    let backendBase = 'https://back.yummeezy.com'
     let resLink = 'https://table.yummeezy.com?establishment=$$$id&lng=$$lng'
     let opened = false
 
